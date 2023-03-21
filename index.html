@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa's Burguer</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="titulo"> Restaurante Papa's Burguer</h2>
+        </div>
+    </header>
+    <main>
+        <section class="tabela">
+      
+            <h2>Reservas da Semana</h2>
+            <table class="table table-primary table-striped">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                        <th>Quantidade de Pessoas</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-clientes">
+                    <tr class="clientes" id="primeiro-cliente">
+                        <td class="info-nome">Alessandra</td>
+                        <td class="info-data">2023-03-20</td>
+                        <td class="info-horario">14:00</td>
+                        <td class="info-quantidade">4</td>
+                    </tr>
+
+                    <tr class="clientes">
+                        <td class="info-nome">Breno</td>
+                        <td class="info-data">2023-03-22</td>
+                        <td class="info-horario">12:30</td>
+                        <td class="info-quantidade">2</td>
+                    </tr>
+
+                    <tr class="clientes">
+                        <td class="info-nome">Jessica</td>
+                        <td class="info-data">2023-03-22</td>
+                        <td class="info-horario">13:30</td>
+                        <td class="info-quantidade">1</td>
+                    </tr>
+                    <tr class="clientes">
+                        <td class="info-nome">Rosan</td>
+                        <td class="info-data">2023-03-23</td>
+                        <td class="info-horario">20:30</td>
+                        <td class="info-quantidade">6</td>
+                    </tr>
+                  </tbody>
+              </table>
+              <div>
+                <label for="quantidade">Total</label>
+                <p></p>
+              </div>
+        </section>
+    </main>
+
+    <section class="container">
+        <h2 id="titulo-form">Agenda sua Reserva</h2>
+        <ul id="mensagem-erro"></ul>
+        <form id="form-adiciona">
+            <div class="">
+                <label for="nome">Nome:</label>
+                <input  id="nome" name="nome" type="nome" placeholder="digite seu nome" class="campo campo-medio">
+            </div>
+
+            <div class="grupo">
+                <label for="data">Data:</label>
+                <input  id="data" name="date" type="date" class="campo campo-medio">
+            </div>
+            
+            <div class="grupo">
+                <label for="horario">Horário:</label>
+                <input  id="horario" name="time" type="time" class="campo campo-medio">
+            </div>
+
+            <div class="grupo">
+                <label for="quantidade">Quantidade de Pessoas:</label>
+                <input  id="quantidade" name="number" type="number" placeholder="digite a quantidade de pessoas" class="campo campo-medio">
+            </div>
+            <button  id="adicionar-cliente"  class="btn btn-success">Reservar</button>
+        </form>
+    </section>
+
+
+
+    <script src="form.js"></script>
+    <script src="removeCliente.js"></script>
+    <script src="calculaSoma.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
